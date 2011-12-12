@@ -44,6 +44,12 @@
 ;;(color-theme-blackboard)
 (color-theme-charcoal-black)
 
+
+;;; cperl-mode is preferred to perl-mode
+(defalias 'perl-mode 'cperl-mode)
+(setq cperl-electric-keywords t) ;; expands for keywords such as
+                                  ;; foreach, while, etc...
+
 ;;setup textmate mode and peepopen
 (add-to-list 'load-path "~/.emacs.d/vendor/textmate.el")
 (add-to-list 'load-path "~/.emacs.d/vendor/")
